@@ -31,9 +31,7 @@ export class App extends Component {
   render() {
     const options = Object.keys(this.state);
     const handleFeedback = this.handleLeaveFeedback;
-    const good = this.state.good;
-    const neutral = this.state.neutral;
-    const bad = this.state.bad;
+    const { good, neutral, bad } = this.state;
 
     return (
       <Container>
